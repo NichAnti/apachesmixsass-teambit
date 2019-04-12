@@ -1,0 +1,37 @@
+// container per la pagina intera (larghezzza e altezza 100%),
+.container {
+  min-height: 100%;
+  width: 100%;
+
+  // blocchi in base al colore con larghezza 1150px,
+  &>* {
+    margin: auto;
+    max-width: 1150px;
+  }
+  .color1 {
+    background-color: $bgColor1;
+  }
+  .color2 {
+    background-color: $bgColor2;
+  }
+}
+
+//dai un margine quando il margine automatico diventa 0
+@media (max-width: 1199px) {
+  .container {
+    &>* {
+      margin: 0 25px;
+    }
+  }
+}
+
+// togli il margine, dai un padding
+@media (max-width: 767px) {
+  .container {
+    &>* {
+      margin: 0;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}

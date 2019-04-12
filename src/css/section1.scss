@@ -1,0 +1,58 @@
+.section1 {
+  margin: 100px 0;
+  display: flex;
+
+  >* {
+    max-width: 50%;
+
+    h1 {
+      display: inline-block;
+      font-size: 50px;
+      line-height: 70px;
+      margin-bottom: 30px;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 22px;
+      line-height: 33px;
+      margin-bottom: 40px;
+    }
+
+    .sign {
+      margin-bottom: 35px;
+
+      button {
+        @include button2;
+      }
+
+      small {
+        margin: 0 15px;
+        opacity: .5;
+      }
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .imgSec1 {
+      background-image: url("https://teambit.io/wp-content/themes/teambeat/img/illustration-main.jpg");
+      background-size: cover;
+      width: 570px;
+      height: 350px;
+    }
+}
+
+@media (max-width: 1152px) {
+  .section1 {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  >* {
+    max-width: 653px;
+    margin: auto;
+  }
+}

@@ -2,5 +2,215 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  color: #58402c;
+}
+
+.container {
+  min-height: 100%;
+  width: 100%;
+}
+
+.container > * {
+  margin: auto;
+  max-width: 1150px;
+}
+
+.container .color1 {
+  background-color: #fff;
+}
+
+.container .color2 {
+  background-color: #ffe7d2;
+}
+
+@media (max-width: 1199px) {
+  .container > * {
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container > * {
+    margin: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.container nav {
+  height: 75px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #58402c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container nav .nav-left .logo {
+  display: inline-block;
+  width: 110px;
+  height: 35px;
+  overflow: hidden;
+  background-image: url(https://teambit.io/wp-content/themes/teambeat/img/logo.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.container nav .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.container nav .nav-right > * {
+  height: 35px;
+  line-height: 35px;
+  margin-left: 20px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container nav .nav-right > *:hover {
+  color: #30488f;
+}
+
+.container nav .nav-right > button {
+  background-color: #fff;
+  color: #30488f;
+  border: 0.5px solid #30488f;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 0 10px;
+  margin-left: 30px;
+}
+
+.container nav .nav-right > button:hover {
+  background-color: #30488f;
+  color: #fff;
+  border: 0.5px solid #30488f;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+.container nav .nav-right .menu {
+  position: relative;
+}
+
+.container nav .nav-right .menu .hidden-menu {
+  display: none;
+}
+
+.container nav .nav-right .menu:hover .hidden-menu {
+  display: block;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translate(-10px, 100%);
+          transform: translate(-10px, 100%);
+  border-radius: 5px;
+  border: 1px solid #e1ddd4;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.container nav .nav-right .menu:hover .hidden-menu span:hover {
+  color: #30488f;
+}
+
+.container nav .hamburger {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .container nav {
+    height: 55px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container nav .nav-right {
+    display: none;
+  }
+
+  .container nav .hamburger {
+    display: block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+
+  .container nav .hamburger .fa-bars {
+    font-size: 20px;
+  }
+}
+
+.section1 {
+  margin: 100px 0;
+  display: flex;
+}
+
+.section1 > * {
+  max-width: 50%;
+}
+
+.section1 > * h1 {
+  display: inline-block;
+  font-size: 50px;
+  line-height: 70px;
+  margin-bottom: 30px;
+}
+
+.section1 > * span {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 40px;
+}
+
+.section1 > * .sign {
+  margin-bottom: 35px;
+}
+
+.section1 > * .sign button {
+  background-color: #30488f;
+  color: #fff;
+  border: 0.5px solid #30488f;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+.section1 > * .sign small {
+  margin: 0 15px;
+  opacity: 0.5;
+}
+
+.section1 > * p {
+  margin-bottom: 20px;
+}
+
+.section1 .imgSec1 {
+  background-image: url("https://teambit.io/wp-content/themes/teambeat/img/illustration-main.jpg");
+  background-size: cover;
+  width: 570px;
+  height: 350px;
+}
+
+@media (max-width: 1152px) {
+  .section1 {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  > * {
+    max-width: 653px;
+    margin: auto;
+  }
 }
 

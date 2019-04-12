@@ -1,0 +1,76 @@
+.container {
+
+  nav {
+    height: 75px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $fColor1;
+    @include flexBar;
+
+    // parte sinistra della nav
+    .nav-left {
+      @import 'logo';
+    }
+
+    // parte destra della nav
+    .nav-right {
+      // allinea verticalmente elementi
+      @include flexV;
+
+      &>* {
+        height: 35px;
+        line-height: 35px;
+        margin-left: 20px;
+        padding: 0 10px;
+        font-size: 14px;
+        font-weight: 600;
+
+        &:hover {
+          color: $fColor2;
+        }
+      }
+
+      &>button {
+        @include button1;
+        margin-left: 30px;
+      }
+      &>button:hover {
+        @include button2;
+      }
+
+      @import 'hidden-menu';
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+
+  .container {
+    nav {
+      height: 55px;
+      margin-bottom: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      // parte destra della nav
+      .nav-right {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+
+        .fa-bars {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// primo e secondo colore di background
+$bgColor1: #fff;
+$bgColor2: #ffe7d2;
+// colore del font e dei bottoni
+$fColor1: #58402c;
+$fColor2: #30488f;
+
+// flex per la nav, aiilinea verticalmente al centro e sposta a dx e sx elementi
+@mixin flexBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// flex per allineare verticalmente elementi
+@mixin flexV {
+  display: flex;
+  align-items: center;
+}
+
+@mixin button1 {
+  background-color: $bgColor1;
+  color: $fColor2;
+  border: .5px solid $fColor2;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+@mixin button2 {
+  background-color: $fColor2;
+  color: $bgColor1;
+  border: .5px solid $fColor2;
+  border-radius: 5px;
+  line-height: 35px;
+  padding: 0 10px;
+}
+
+
+
+// proprietà generali
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  color: $fColor1;
+}
