@@ -1,6 +1,8 @@
 .container {
 
   nav {
+    position: sticky;
+    top: 0;
     height: 75px;
     margin-bottom: 40px;
     padding-top: 20px;

@@ -4,7 +4,7 @@
   width: 100%;
 
   // blocchi in base al colore con larghezza 1150px,
-  &>* {
+  * {
     margin: auto;
     max-width: 1150px;
   }
@@ -13,6 +13,7 @@
   }
   .color2 {
     background-color: $bgColor2;
+    text-align: center;
   }
 }
 
